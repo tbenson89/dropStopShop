@@ -1,0 +1,68 @@
+@import "src/assets/stylesheets/variables";
+
+/*TopNav Toolbar Styles*/
+.toolbar {
+  position: sticky;
+  position: -webkit-sticky; /* For macOS/iOS Safari */
+  top: 0; /* Sets the sticky toolbar to be on top */
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #EEEEEE;
+  color: black;
+  font-weight: bolder;
+  img {
+    margin: 0 16px;
+  }
+}
+
+
+// Typo
+.centered { text-align: center !important; }
+
+.shop-title { font-weight: bolder; }
+
+// Structure
+.layout-padding { padding: 2%; }
+.layout-no-padding { padding: 0; }
+
+.give-margin { margin: 2%; }
+.takeMargin { margin: 0; }
+
+.align-content { display: flex; align-items: baseline }
+
+
+/*Main Content*/
+a,
+a:visited,
+a:hover {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+.content {
+  margin-top: 10vh;
+}
+
+svg#clouds {
+  position: fixed;
+  bottom: -160px;
+  left: -230px;
+  z-index: -10;
+  width: 1920px;
+}
+
+/*Footer styling*/
+footer {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  line-height: 20px;
+  a {
+    display: flex;
+    align-items: center;
+  }
+}
