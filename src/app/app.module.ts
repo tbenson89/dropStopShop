@@ -5,14 +5,14 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatButtonModule } from '@angular/material/button';
-import { LandingHeaderComponent } from './partials/landing-header/landing-header.component';
+import { LandingMainCatsComponent } from './partials/landing-main-cats/landing-main-cats.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandingHeaderComponent
+    LandingMainCatsComponent
   ],
     imports: [
         BrowserModule,
