@@ -8,11 +8,13 @@ import { MatButtonModule } from '@angular/material/button';
 import { LandingMainCatsComponent } from './partials/landing-main-cats/landing-main-cats.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
+import { MainFooterComponent } from './partials/main-footer/main-footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandingMainCatsComponent
+    LandingMainCatsComponent,
+    MainFooterComponent
   ],
     imports: [
         BrowserModule,
