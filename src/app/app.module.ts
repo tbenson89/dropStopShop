@@ -9,12 +9,14 @@ import { LandingMainCatsComponent } from './partials/landing-main-cats/landing-m
 import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
 import { MainFooterComponent } from './partials/main-footer/main-footer.component';
+import { MainHeaderComponent } from './partials/main-header/main-header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingMainCatsComponent,
-    MainFooterComponent
+    MainFooterComponent,
+    MainHeaderComponent
   ],
     imports: [
         BrowserModule,
