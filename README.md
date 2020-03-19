@@ -1,6 +1,6 @@
 # DropStopShop
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6.
+The One Page Shopping Application for mobile popup marketing and sales.
 
 ## Setup Development ENV
 Create workspace area 'mkdir' to create directory. Then 'git clone <link here>'
