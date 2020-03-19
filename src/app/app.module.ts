@@ -10,13 +10,16 @@ import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
 import { MainFooterComponent } from './partials/main-footer/main-footer.component';
 import { MainHeaderComponent } from './partials/main-header/main-header.component';
+import { MainMenuComponent } from './partials/main-menu/main-menu.component';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingMainCatsComponent,
     MainFooterComponent,
-    MainHeaderComponent
+    MainHeaderComponent,
+    MainMenuComponent
   ],
     imports: [
         BrowserModule,
@@ -25,7 +28,8 @@ import { MainHeaderComponent } from './partials/main-header/main-header.componen
         FlexLayoutModule,
         MatButtonModule,
         MatCardModule,
-        MatDividerModule
+        MatDividerModule,
+        MatIconModule
     ],
   providers: [],
   bootstrap: [AppComponent]
