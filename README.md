@@ -3,17 +3,15 @@
 The One Page Shopping Application for mobile popup marketing and sales.
 
 ## Setup Development ENV
-Create workspace area 'mkdir' to create directory. Then 'git clone <link here>'
+Create workspace area `mkdir` to create the directory. Then 'git clone https://github.com/tbenson89/dropStopShop.git'
 <br /> 
-Run 'npm install' to install the node modules
+Run `npm install` to install the node_modules
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `ng serve` or click the debugger if you are setup using angular CLI on IntelliJ/Webstorm. 
+<br />
+Navigate to `http://localhost:4200/`.
 
 ## Build
 
