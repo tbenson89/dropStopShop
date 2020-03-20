@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LandingMainCatsComponent } from './landing-main-cats.component';
+import { MainCatCardsComponent } from './main-cat-cards.component';
 
-describe('LandingMainCatsComponent', () => {
-  let component: LandingMainCatsComponent;
-  let fixture: ComponentFixture<LandingMainCatsComponent>;
+describe('MainCatCardsComponent', () => {
+  let component: MainCatCardsComponent;
+  let fixture: ComponentFixture<MainCatCardsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LandingMainCatsComponent ]
+      declarations: [ MainCatCardsComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LandingMainCatsComponent);
+    fixture = TestBed.createComponent(MainCatCardsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
