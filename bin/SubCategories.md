@@ -20,3 +20,8 @@ A detailed list of categories and sub-categories.
 * Tents and Packing
 * Lounge and Comfort
 * Randoms and Goodiez
+
+## Thrift Shop
+* Modifi Goodiez
+* Barn Finds
+* Restoration Finish
