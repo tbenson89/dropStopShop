@@ -23,5 +23,10 @@ A detailed list of categories and sub-categories.
 
 ## Thrift Shop
 * Modifi Goodiez
-* Barn Finds
+* Artistry Crafts
 * Restoration Finish
+
+## Antiques & Junk
+* Treasures and Gems
+* Junk Drawer Fun
+* Barn Finds
