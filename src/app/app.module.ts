@@ -8,9 +8,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MainCatCardsComponent } from './partials/main-cat-cards/main-cat-cards.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
-import { MainFooterComponent } from './partials/main-footer/main-footer.component';
-import { MainHeaderComponent } from './partials/main-header/main-header.component';
-import { MainMenuComponent } from './partials/main-menu/main-menu.component';
+import { MainFooterComponent } from './partials/global/main-footer/main-footer.component';
+import { MainHeaderComponent } from './partials/global/main-header/main-header.component';
+import { MainMenuComponent } from './partials/global/main-menu/main-menu.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
 
