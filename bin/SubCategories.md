@@ -30,3 +30,13 @@ A detailed list of categories and sub-categories.
 * Treasures and Gems
 * Junk Drawer Fun
 * Barn Finds
+
+## Digital Services
+* Websites and Webapps
+* ERP Inventory Management
+* Hosting & Server Admin
+
+## Randomness / Other
+* Random Deals
+* Shuffle Bin
+* Other
