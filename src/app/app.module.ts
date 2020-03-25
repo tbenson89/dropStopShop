@@ -13,6 +13,14 @@ import { MainHeaderComponent } from './partials/global/main-header/main-header.c
 import { MainMenuComponent } from './partials/global/main-menu/main-menu.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
+import { ClimbingCatModalComponent } from './partials/main-cat-modals/climbing-cat-modal/climbing-cat-modal.component';
+import { AutomotiveCatModalComponent } from './partials/main-cat-modals/automotive-cat-modal/automotive-cat-modal.component';
+import { SwimmingCatModalComponent } from './partials/main-cat-modals/swimming-cat-modal/swimming-cat-modal.component';
+import { CampingCatModalComponent } from './partials/main-cat-modals/camping-cat-modal/camping-cat-modal.component';
+import { ThirftShopCatModalComponent } from './partials/main-cat-modals/thirft-shop-cat-modal/thirft-shop-cat-modal.component';
+import { AntiqueJunkCatModalComponent } from './partials/main-cat-modals/antique-junk-cat-modal/antique-junk-cat-modal.component';
+import { DigitalServicesCatModalComponent } from './partials/main-cat-modals/digital-services-cat-modal/digital-services-cat-modal.component';
+import { RandomnessCatModalComponent } from './partials/main-cat-modals/randomness-cat-modal/randomness-cat-modal.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +28,15 @@ import {MatListModule} from '@angular/material/list';
     MainCatCardsComponent,
     MainFooterComponent,
     MainHeaderComponent,
-    MainMenuComponent
+    MainMenuComponent,
+    ClimbingCatModalComponent,
+    AutomotiveCatModalComponent,
+    SwimmingCatModalComponent,
+    CampingCatModalComponent,
+    ThirftShopCatModalComponent,
+    AntiqueJunkCatModalComponent,
+    DigitalServicesCatModalComponent,
+    RandomnessCatModalComponent
   ],
   imports: [
     BrowserModule,
