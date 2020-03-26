@@ -21,6 +21,10 @@ import { ThirftShopCatModalComponent } from './partials/main-cat-modals/thirft-s
 import { AntiqueJunkCatModalComponent } from './partials/main-cat-modals/antique-junk-cat-modal/antique-junk-cat-modal.component';
 import { DigitalServicesCatModalComponent } from './partials/main-cat-modals/digital-services-cat-modal/digital-services-cat-modal.component';
 import { RandomnessCatModalComponent } from './partials/main-cat-modals/randomness-cat-modal/randomness-cat-modal.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatInputModule} from '@angular/material/input';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -36,7 +40,7 @@ import { RandomnessCatModalComponent } from './partials/main-cat-modals/randomne
     ThirftShopCatModalComponent,
     AntiqueJunkCatModalComponent,
     DigitalServicesCatModalComponent,
-    RandomnessCatModalComponent
+    RandomnessCatModalComponent,
   ],
   imports: [
     BrowserModule,
@@ -47,7 +51,11 @@ import { RandomnessCatModalComponent } from './partials/main-cat-modals/randomne
     MatCardModule,
     MatDividerModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatToolbarModule,
+    MatInputModule,
+    MatProgressBarModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
