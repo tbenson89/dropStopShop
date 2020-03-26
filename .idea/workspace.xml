@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="040fe4b1-5945-4044-8203-22029b44c949" name="refactor landing component to be main-cats" comment="refactor landing component to be main-cats">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
     </list>
     <list id="b7b8d86d-2acd-4152-99bb-9a31b449dcf5" name="Default Changelist" comment="" />
     <list id="5ae488d7-585b-4b6d-a3a7-1025f5d01dde" name="project ENV build" comment="" />
@@ -56,7 +56,7 @@
       <recent name="D:\workspaces\dropStopShop\src\assets" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.Angular CLI Server">
+  <component name="RunManager">
     <configuration name="E2E Tests (dropStopShop)" type="JavaScriptTestRunnerProtractor">
       <config-file value="$PROJECT_DIR$/e2e/protractor.conf.js" />
       <node-interpreter value="project" />
