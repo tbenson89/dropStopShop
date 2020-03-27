@@ -6,13 +6,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatButtonModule } from '@angular/material/button';
 import { MainCatCardsComponent } from './partials/main-cat-cards/main-cat-cards.component';
-import {MatCardModule} from '@angular/material/card';
-import {MatDividerModule} from '@angular/material/divider';
+import { MatCardModule } from '@angular/material/card';
+import { MatDividerModule } from '@angular/material/divider';
 import { MainFooterComponent } from './partials/global/main-footer/main-footer.component';
 import { MainHeaderComponent } from './partials/global/main-header/main-header.component';
 import { MainMenuComponent } from './partials/global/main-menu/main-menu.component';
-import {MatIconModule} from '@angular/material/icon';
-import {MatListModule} from '@angular/material/list';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
 import { ClimbingCatModalComponent } from './partials/main-cat-modals/climbing-cat-modal/climbing-cat-modal.component';
 import { AutomotiveCatModalComponent } from './partials/main-cat-modals/automotive-cat-modal/automotive-cat-modal.component';
 import { SwimmingCatModalComponent } from './partials/main-cat-modals/swimming-cat-modal/swimming-cat-modal.component';
@@ -21,10 +21,11 @@ import { ThirftShopCatModalComponent } from './partials/main-cat-modals/thirft-s
 import { AntiqueJunkCatModalComponent } from './partials/main-cat-modals/antique-junk-cat-modal/antique-junk-cat-modal.component';
 import { DigitalServicesCatModalComponent } from './partials/main-cat-modals/digital-services-cat-modal/digital-services-cat-modal.component';
 import { RandomnessCatModalComponent } from './partials/main-cat-modals/randomness-cat-modal/randomness-cat-modal.component';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatInputModule} from '@angular/material/input';
-import {MatProgressBarModule} from '@angular/material/progress-bar';
-import {MatTableModule} from '@angular/material/table';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatInputModule } from '@angular/material/input';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatTableModule } from '@angular/material/table';
+import { TesterArenaComponent } from './gage/tester-arena/tester-arena.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import {MatTableModule} from '@angular/material/table';
     AntiqueJunkCatModalComponent,
     DigitalServicesCatModalComponent,
     RandomnessCatModalComponent,
+    TesterArenaComponent,
   ],
   imports: [
     BrowserModule,
