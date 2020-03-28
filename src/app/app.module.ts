@@ -26,6 +26,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatTableModule } from '@angular/material/table';
 import { TesterArenaComponent } from './gage/tester-arena/tester-arena.component';
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { TesterArenaComponent } from './gage/tester-arena/tester-arena.component
     FlexLayoutModule,
     MatButtonModule,
     MatCardModule,
+    MatDialogModule,
     MatDividerModule,
     MatIconModule,
     MatListModule,
