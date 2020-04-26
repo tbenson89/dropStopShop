@@ -16,11 +16,77 @@ import { RandomnessCatModalComponent } from '../main-cat-modals/randomness-cat-m
 })
 export class MainCatCardsComponent implements OnInit {
   dialogWidth: any;
+  mainCatCardContent: any;
 
   constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
     this.dialogWidth = '80%';
+
+    this.mainCatCardContent = {
+      mainCatCardImg: {
+        climbing: '../../../assets/images/climbing/andrew-neel-unsplash-climbingGear.JPG',
+        automotive: '../../../assets/images/automotive/automotive-gear-snailInstall-slmodd.png',
+        swimming: '../../../assets/images/swimming/seanTookThese-unsplash.JPG',
+        camping: '../../../assets/images/camping/adrian-unsplash.jpg',
+        thrift: 'Thrift Shop',
+        antique: 'Antiques & Junk',
+        digiServices: 'Digital Services',
+        random: 'Randomness'
+      },
+      mainCatCardTitle: {
+        climbing: 'Climbing Gear',
+        automotive: 'Automotive Gear',
+        swimming: 'Swimming Gear',
+        camping: 'Camping Gear',
+        thrift: 'Thrift Shop',
+        antique: 'Antiques & Junk',
+        digiServices: 'Digital Services',
+        random: 'Randomness'
+      },
+      mainCatCardSubCats: {
+        climbing: [
+          'Climbing Shoes',
+          'Climbing Chalks',
+          'Climbing Accessories'
+        ],
+        automotive: [
+          'T-Shirts and Apparel',
+          'Goodiez and Lootz',
+          'Modified Accessories'
+        ],
+        swimming: [
+          'Women\'s Swimming Gear',
+          'Men\'s Swimming Gear',
+          'Swimming Accessories'
+        ],
+        camping: [
+          'Tents and Packing',
+          'Lounge and Comfort',
+          'Randoms and Goodiez'
+        ],
+        thrift: [
+          'Modified Goodiez',
+          'Artistry Crafts',
+          'Restoration Finish'
+        ],
+        antique: [
+          'Treasures and Gems',
+          'Junk Drawer Fun',
+          'Barn Finds'
+        ],
+        digiServices: [
+          'Websites & Applications',
+          'Inventory Management',
+          'Hosting & Server Admin'
+        ],
+        random: [
+          'Random Deals',
+          'Shuffle Bin',
+          'Other Goodz'
+        ]
+      }
+    };
   }
 
   /* Sub Category Modal Views */
