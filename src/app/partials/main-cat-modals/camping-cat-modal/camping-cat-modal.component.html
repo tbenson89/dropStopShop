@@ -1,3 +1,19 @@
 <h1>Our Camping Gear</h1>
 <mat-divider></mat-divider>
-<p>laskdjfa;sdlkjf</p>
+<!--Two Columns right side bigger-->
+<div fxLayout="row">
+  <div fxFlex="30">
+    <div class="layout-padding">
+      <h4>SubCategories</h4>
+      <ul>
+        <li>Filterable Search Query</li>
+      </ul>
+    </div>
+  </div>
+  <mat-divider [vertical]="true"></mat-divider>
+  <div fxFlex="70">
+    <p class="layout-padding">
+      The Camping Content
+    </p>
+  </div>
+</div>

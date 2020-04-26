@@ -15,18 +15,19 @@ import { RandomnessCatModalComponent } from '../main-cat-modals/randomness-cat-m
   styleUrls: ['./main-cat-cards.component.scss']
 })
 export class MainCatCardsComponent implements OnInit {
+  dialogWidth: any;
 
   constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
+    this.dialogWidth = '80%';
   }
 
   /* Sub Category Modal Views */
-
   /*SUBCAT - Climbing Gear Modal*/
   showClimbSubCatModal(): void {
     const dialogRef = this.dialog.open(ClimbingCatModalComponent, {
-      width: '250px'
+      width: this.dialogWidth
     });
 
     dialogRef.afterClosed().subscribe(result => {
@@ -37,7 +38,7 @@ export class MainCatCardsComponent implements OnInit {
   /*SUBCAT - Automotive Gear Modal*/
   showAutomotiveSubCatModal(): void {
     const dialogRef = this.dialog.open(AutomotiveCatModalComponent, {
-      width: '250px'
+      width: this.dialogWidth
     });
 
     dialogRef.afterClosed().subscribe(result => {
@@ -48,7 +49,7 @@ export class MainCatCardsComponent implements OnInit {
   /*SUBCAT - Swimming Gear Modal*/
   showSwimmingSubCatModal(): void {
     const dialogRef = this.dialog.open(SwimmingCatModalComponent, {
-      width: '250px'
+      width: this.dialogWidth
     });
 
     dialogRef.afterClosed().subscribe(result => {
@@ -59,7 +60,7 @@ export class MainCatCardsComponent implements OnInit {
   /*SUBCAT - Camping Gear Modal*/
   showCampingSubCatModal(): void {
     const dialogRef = this.dialog.open(CampingCatModalComponent, {
-      width: '250px'
+      width: this.dialogWidth
     });
 
     dialogRef.afterClosed().subscribe(result => {
@@ -70,7 +71,7 @@ export class MainCatCardsComponent implements OnInit {
   /*SUBCAT - ThriftShop Shop Modal*/
   showThriftSubCatModal(): void {
     const dialogRef = this.dialog.open(ThirftShopCatModalComponent, {
-      width: '250px'
+      width: this.dialogWidth
     });
 
     dialogRef.afterClosed().subscribe(result => {
@@ -81,7 +82,7 @@ export class MainCatCardsComponent implements OnInit {
   /*SUBCAT - Antique Junk Modal*/
   showAntiqueSubCatModal(): void {
     const dialogRef = this.dialog.open(AntiqueJunkCatModalComponent, {
-      width: '250px'
+      width: this.dialogWidth
     });
 
     dialogRef.afterClosed().subscribe(result => {
@@ -92,7 +93,7 @@ export class MainCatCardsComponent implements OnInit {
   /*SUBCAT - Digital Services Modal*/
   showDigitalServicesSubCatModal(): void {
     const dialogRef = this.dialog.open(DigitalServicesCatModalComponent, {
-      width: '250px'
+      width: this.dialogWidth
     });
 
     dialogRef.afterClosed().subscribe(result => {
@@ -103,7 +104,7 @@ export class MainCatCardsComponent implements OnInit {
   /*SUBCAT - Randomness Modal*/
   showRandomnessSubCatModal(): void {
     const dialogRef = this.dialog.open(RandomnessCatModalComponent, {
-      width: '250px'
+      width: this.dialogWidth
     });
 
     dialogRef.afterClosed().subscribe(result => {
