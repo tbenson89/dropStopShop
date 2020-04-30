@@ -23,7 +23,7 @@ export class MainCatCardsComponent implements OnInit {
   ngOnInit(): void {
     this.dialogWidth = '80%';
 
-    this.mainCatCardContent = {
+    this.mainCatCardContent = [{
       mainCatCardImg: {
         climbing: '../../../assets/images/climbing/andrew-neel-unsplash-climbingGear.JPG',
         automotive: '../../../assets/images/automotive/automotive-gear-snailInstall-slmodd.png',
@@ -86,7 +86,8 @@ export class MainCatCardsComponent implements OnInit {
           'Other Goodz'
         ]
       }
-    };
+    }];
+    console.log(this.mainCatCardContent);
   }
 
   /* Sub Category Modal Views */

@@ -5,13 +5,6 @@
 
   <!-- The Applications Main Categories -->
 
-  <!--TODO Trying to make it dynamic!-->
-<!--  <div fxLayout="row">-->
-<!--    <mat-card *ngFor="let mainCatData of mainCatCardContent[0]">-->
-<!--      {{mainCatData.title}}-->
-<!--    </mat-card>-->
-<!--  </div>-->
-
   <!-- 1st Row Categories -->
   <div fxLayout="row" class="align-content-baseline">
     <div fxFlex="1"></div>
@@ -23,9 +16,7 @@
         <mat-card-content fxLayoutAlign="left">
           <!-- Climbing Sub Categories -->
           <mat-list>
-            <mat-list-item>Climbing Shoes</mat-list-item>
-            <mat-list-item>Climbing Chalks</mat-list-item>
-            <mat-list-item>Climbing Accessories</mat-list-item>
+            <mat-list-item *ngFor="let climbingSubCats of mainCatCardContent[0]?.mainCatCardSubCats?.climbing">{{climbingSubCats}}</mat-list-item>
             <mat-list-item>. . .</mat-list-item>
           </mat-list>
         </mat-card-content>
@@ -43,9 +34,7 @@
         <mat-card-content>
           <!-- Automotive Sub Categories -->
           <mat-list>
-            <mat-list-item>Modifi T-shirts and Apparel</mat-list-item>
-            <mat-list-item>Modifi Goodiez and Lootz</mat-list-item>
-            <mat-list-item>Modifi Accessories</mat-list-item>
+            <mat-list-item *ngFor="let automotiveSubCats of mainCatCardContent[0]?.mainCatCardSubCats?.automotive">{{automotiveSubCats}}</mat-list-item>
             <mat-list-item>. . .</mat-list-item>
           </mat-list>
         </mat-card-content>
@@ -63,9 +52,7 @@
         <mat-card-content>
           <!-- Swimming Sub Categories -->
           <mat-list>
-            <mat-list-item>Women's Swimming Gear</mat-list-item>
-            <mat-list-item>Men's Swimming Gear</mat-list-item>
-            <mat-list-item>Swimming Accessories</mat-list-item>
+            <mat-list-item *ngFor="let swimmingSubCats of mainCatCardContent[0]?.mainCatCardSubCats?.swimming">{{swimmingSubCats}}</mat-list-item>
             <mat-list-item>. . .</mat-list-item>
           </mat-list>
         </mat-card-content>
@@ -83,9 +70,7 @@
         <mat-card-content>
           <!-- Camping Sub Categories -->
           <mat-list>
-            <mat-list-item>Tents and Packing</mat-list-item>
-            <mat-list-item>Lounge and Comfort</mat-list-item>
-            <mat-list-item>Randoms and Goodiez</mat-list-item>
+            <mat-list-item *ngFor="let campingSubCats of mainCatCardContent[0]?.mainCatCardSubCats?.camping">{{campingSubCats}}</mat-list-item>
             <mat-list-item>. . .</mat-list-item>
           </mat-list>
         </mat-card-content>
@@ -111,9 +96,7 @@
         <mat-card-content>
           <!-- Thrift Shop Sub Categories -->
           <mat-list>
-            <mat-list-item>Modifi Goodiez</mat-list-item>
-            <mat-list-item>Artistry Crafts</mat-list-item>
-            <mat-list-item>Restoration Finish</mat-list-item>
+            <mat-list-item *ngFor="let thriftSubCats of mainCatCardContent[0]?.mainCatCardSubCats?.thrift">{{thriftSubCats}}</mat-list-item>
             <mat-list-item>. . .</mat-list-item>
           </mat-list>
         </mat-card-content>
@@ -131,9 +114,7 @@
         <mat-card-content>
           <!--  Sub Categories -->
           <mat-list>
-            <mat-list-item>Treasures and Gems</mat-list-item>
-            <mat-list-item>Junk Drawer Fun</mat-list-item>
-            <mat-list-item>Barn Finds</mat-list-item>
+            <mat-list-item *ngFor="let antiqueSubCats of mainCatCardContent[0]?.mainCatCardSubCats?.antique">{{antiqueSubCats}}</mat-list-item>
             <mat-list-item>. . .</mat-list-item>
           </mat-list>
         </mat-card-content>
@@ -151,9 +132,7 @@
         <mat-card-content>
           <!--  Sub Categories -->
           <mat-list>
-            <mat-list-item>Websites and Webapps</mat-list-item>
-            <mat-list-item>Inventory Management</mat-list-item>
-            <mat-list-item>Hosting & Server Admin</mat-list-item>
+            <mat-list-item *ngFor="let digiServicesSubCats of mainCatCardContent[0]?.mainCatCardSubCats?.digiServices">{{digiServicesSubCats}}</mat-list-item>
             <mat-list-item>. . .</mat-list-item>
           </mat-list>
         </mat-card-content>
@@ -171,9 +150,7 @@
         <mat-card-content>
           <!--  Sub Categories -->
           <mat-list>
-            <mat-list-item>Random Deals</mat-list-item>
-            <mat-list-item>Shuffle Bin</mat-list-item>
-            <mat-list-item>Other Goodz</mat-list-item>
+            <mat-list-item *ngFor="let randomnSubCats of mainCatCardContent[0]?.mainCatCardSubCats?.random">{{randomnSubCats}}</mat-list-item>
             <mat-list-item>. . .</mat-list-item>
           </mat-list>
         </mat-card-content>
@@ -185,5 +162,23 @@
     <div fxFlex="1"></div>
   </div><!-- .fxLayout Row2 Main Category Cards END -->
 
+  <!--TODO Only does the main static climbing need to iterate through and ngFor all card cats. -->
+  <div fxLayout="row">
+    <mat-card *ngFor="let mainCatData of mainCatCardContent">
+      <img src="{{mainCatData.mainCatCardImg.climbing}}" />
+      <hr>
+      <mat-card-title class="layout-padding">{{mainCatData.mainCatCardTitle.climbing}}</mat-card-title>
+      <mat-card-content fxLayoutAlign="left">
+        <!-- Climbing Sub Categories -->
+        <mat-list>
+          <mat-list-item *ngFor="let climbingSubCats of mainCatData.mainCatCardSubCats.climbing">{{climbingSubCats}}</mat-list-item>
+          <mat-list-item>. . .</mat-list-item>
+        </mat-list>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="warn" (click)="showClimbSubCatModal()">See More</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
 
 </div>
