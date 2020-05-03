@@ -49,7 +49,7 @@ exports.findAll = (req, res) => {
 exports.findOne = (req, res) => {
   const id = req.params.id;
 
-  // TODO stopped here
+  // TODO stopped here https://youtu.be/ia3iFUk7yjU
   // Item.findById(id)
   //   .then(data => {
   //     if (!da)
