@@ -25,6 +25,7 @@ db.mongoose
   })
   .catch(err => {
     console.log("There was a problem with the DB_Connection!" + err);
+    console.log(db.url)
     process.exit();
   });
 
@@ -40,3 +41,6 @@ const PORT = process.env.PORT || 8080;
 app.listen(PORT , () => {
   console.log(`DSS_Server is running on ${PORT}.`);
 });
+
+
+// TODO: stopped here https://youtu.be/ia3iFUk7yjU?t=373

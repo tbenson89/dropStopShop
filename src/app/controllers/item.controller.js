@@ -45,13 +45,71 @@ exports.findAll = (req, res) => {
     });
 };
 
-// Find One by ID
-exports.findOne = (req, res) => {
+// Find Item by ID
+exports.findItem = (req, res) => {
   const id = req.params.id;
 
-  // TODO stopped here https://youtu.be/ia3iFUk7yjU
-  // Item.findById(id)
-  //   .then(data => {
-  //     if (!da)
-  //   })
+  Item.findById(id)
+    .then(data => {
+      if (!data)
+        res.status(404).send({ message: 'No Item Found with ID of ' + id });
+      else res.send(data);
+    })
+    .catch(err => {
+      res
+        .status(500)
+        .send({ message: 'Error finding Item with ID of ' + id });
+    });
 };
+
+// Update Item by ID
+exports.update = (req , res) => {
+ if(!req.body) {
+   return res.status(400).send({
+     message: 'Item to Update can not be empty!'
+   });
+ }
+
+ const id = req.params.id;
+
+ Item.findByIdAndUpdate(id, req.body, { useFindAndModify: true })
+   .then(data => {
+     if (!data) {
+       res.status(404).send({
+         message: 'Cannot update Item with id= ${ id }. There may have been an issue ' +
+           'Finding the Item in the Database. . .'
+       });
+     } else res.send({ message: 'Item was updated successfully!' });
+   })
+   .catch(err => {
+     res.status(500).send({
+       message: 'Error updating Item with id= ' + id
+     });
+   });
+};
+
+// Delete an Item by ID
+exports.delete = (req, res) => {
+  const id = req.params.id;
+
+  Item.findByIdAndRemove(id, { useFindAndModify: false })
+    .then(data => {
+      if(!data) {
+        res.status(404).send({
+          message: 'Cannot delete Item with ID= ${ id } We may not be able to find ' +
+            'in the Database. . .'
+        });
+      } else {
+        res.send({
+          message: 'Item was deleted successfully!'
+        });
+      }
+    })
+    .catch(err => {
+      res.status(500).send({
+        message: 'Could not delete Item with ID= ' + id
+      });
+    });
+};
+
+

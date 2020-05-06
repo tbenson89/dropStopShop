@@ -10,7 +10,7 @@ module.exports = app => {
   router.get('/shop/items/findAll', items.findAll);
 
   // Find Item By ID
-  router.get('/shop/items/item/:id', items.findOne);
+  router.get('/shop/items/item/:id', items.findItem);
 
   // Update Item by ID
   router.put('/shop/items/item/:id', items.update);
