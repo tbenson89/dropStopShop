@@ -13,6 +13,10 @@ Run `ng serve` or click the debugger if you are setup using angular CLI on Intel
 <br />
 Navigate to `http://localhost:4200/`.
 
+## Express / Mongo Server
+
+cd `cd src` and run `node server.js` to start the mongo db
+
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.

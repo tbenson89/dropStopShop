@@ -14,6 +14,13 @@ app.use(bodyParse.json());
 // parse reqs of content-type - application/x-ww/form-urlencoded
 app.use(bodyParse.urlencoded({ extended: true }));
 
+
+// Get our API routes
+const api = require('./app/routes/item.routes.js');
+
+// Set our api routes
+app.use('/api/inventory/', api);
+
 const db = require('./app/models');
 db.mongoose
   .connect(db.url, {
@@ -34,13 +41,9 @@ app.get("/get" , (req , res) => {
   res.json({ message: "Welcome to the Drop Stop Shop Application!" })
 });
 
-require('./app/routes/item.routes.js');
 
 // Set Port, Listen for Requests
 const PORT = process.env.PORT || 8080;
 app.listen(PORT , () => {
   console.log(`DSS_Server is running on ${PORT}.`);
 });
-
-
-// TODO: stopped here https://youtu.be/ia3iFUk7yjU?t=373

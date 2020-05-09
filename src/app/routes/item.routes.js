@@ -3,20 +3,24 @@ module.exports = app => {
 
   let router = require('express').Router();
 
+  // TODO: routes are not being reached ! https://youtu.be/ia3iFUk7yjU?t=373
+  router.get('/test' , (req, res)  => {
+    res.send('You have reached the Applications API Endpoints')
+  })
   // Create New Item
-  router.post('/shop/items/item/:id', items.create);
+  router.post('/products/item/:id', items.create);
 
   // Get ALL Items
-  router.get('/shop/items/findAll', items.findAll);
+  router.get('/products/item/findAll', items.findAll);
 
   // Find Item By ID
-  router.get('/shop/items/item/:id', items.findItem);
+  router.get('/products/item/:id', items.findItem);
 
   // Update Item by ID
-  router.put('/shop/items/item/:id', items.update);
+  router.put('/products/item/:id', items.update);
 
   // Delete Item by ID
-  router.delete('/shop/items/item/:id', items.delete);
+  router.delete('/products/item/:id', items.delete);
 
-  app.use('/api/inventory/', router);
+  app.use(router);
 };
