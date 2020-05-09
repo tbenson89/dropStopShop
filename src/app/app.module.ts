@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NguCarouselModule } from '@ngu/carousel';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatButtonModule } from '@angular/material/button';
 import { MainCatCardsComponent } from './partials/main-cat-cards/main-cat-cards.component';
@@ -26,7 +27,9 @@ import { MatInputModule } from '@angular/material/input';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatTableModule } from '@angular/material/table';
 import { TesterArenaComponent } from './gage/tester-arena/tester-arena.component';
-import {MatDialogModule} from '@angular/material/dialog';
+import { MatDialogModule } from '@angular/material/dialog';
+import { CarouselTestComponent } from './partials/main-cat-modals/climbing-cat-modal/carousel-test/carousel-test.component';
+import { MainCarouselConfigComponent } from './partials/global/main-carousel-config/main-carousel-config.component';
 
 @NgModule({
   declarations: [
@@ -44,11 +47,14 @@ import {MatDialogModule} from '@angular/material/dialog';
     DigitalServicesCatModalComponent,
     RandomnessCatModalComponent,
     TesterArenaComponent,
+    CarouselTestComponent,
+    MainCarouselConfigComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    NguCarouselModule,
     FlexLayoutModule,
     MatButtonModule,
     MatCardModule,
