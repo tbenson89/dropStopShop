@@ -35,7 +35,7 @@
 .takeMargin { margin: 0; }
 
 .align-content-baseline { display: flex; align-items: baseline }
-.align-content-start { display: flex; align-items: start; }
+.align-content-start { display: flex; align-items: flex-start; }
 
 /*Main Content*/
 a,

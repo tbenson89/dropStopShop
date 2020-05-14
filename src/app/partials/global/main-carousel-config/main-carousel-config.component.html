@@ -1,1 +1,9 @@
-<p>main-carousel-config works!</p>
+<ngu-carousel #myCarousel [inputs]="carouselTile"  [dataSource]="carouselTileItems">
+  <ngu-tile *nguCarouselDef="let item;">
+    <div class="tile" [style.background]="'url(' + item + ')'" style="min-height: 200px">
+      <h1>Title</h1>
+    </div>
+  </ngu-tile>
+  <button NguCarouselPrev class="leftRs" [style.opacity]="myCarousel.isFirst ? 0.5:1">&lt;</button>
+  <button NguCarouselNext class="rightRs" [style.opacity]="myCarousel.isLast ? 0.5:1">&gt;</button>
+</ngu-carousel>
