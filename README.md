@@ -2,6 +2,13 @@
 
 The One Page Shopping Application for mobile popup marketing and sales.
 
+### Important
+- Add what the project is fully about 
+- what you still need to do 
+- what the plan of the project is 
+- use cases of the project 
+- dead/alive? 
+
 ## Setup Development ENV
 Create workspace area `mkdir` to create the directory. Then 'git clone https://github.com/tbenson89/dropStopShop.git'
 <br /> 
